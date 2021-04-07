@@ -5,7 +5,7 @@ const admin = require('firebase-admin');
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.0q8xi.mongodb.net/solar?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.0q8xi.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 const port = 8000
 
